@@ -1,6 +1,5 @@
 numpy 
 pandas
-tensorflow
 matplotlib
 seaborn
 python-dotenv
@@ -9,5 +8,7 @@ keras
 ipykernel
 dill
 scikit-learn
-tensorflow-text
 git-filter-repo
+flask
+tensorflow
+tensorflow-text

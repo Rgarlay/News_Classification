@@ -38,9 +38,9 @@ class PredictPipeline:
         try:
 
             ##just the data paths and imports here
-            model_path = r'C:\Users\rgarlay\Desktop\DS\news_classification\News_Classification\archieve\model.h5'
-            preprocessor_path = r'C:\Users\rgarlay\Desktop\DS\news_classification\News_Classification\archieve\encoder.pkl'
-            token_path=r'C:\Users\rgarlay\Desktop\DS\news_classification\News_Classification\archieve\tokenizer.json'
+            model_path = r'C:\Users\rgarlay\Desktop\DS\Render_P\ABC\News_Classification\News_Classification\archieve\model.h5'
+            preprocessor_path = r'C:\Users\rgarlay\Desktop\DS\Render_P\ABC\News_Classification\News_Classification\archieve\encoder.pkl'
+            token_path=r'C:\Users\rgarlay\Desktop\DS\Render_P\ABC\News_Classification\News_Classification\archieve\tokenizer.json'
 
             logging.info("Loading model")
             model = tf.keras.models.load_model(model_path)
