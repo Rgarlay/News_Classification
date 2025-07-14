@@ -10,5 +10,4 @@ dill
 scikit-learn
 git-filter-repo
 flask
-tensorflow==2.11.0
-tensorflow-text==2.11.0
+
