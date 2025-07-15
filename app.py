@@ -10,7 +10,7 @@ app = application
 @app.route('/', methods = ['GET','POST'])
 def predict_news():
     if request.method=='GET':
-        return render_template('home.html')
+        return render_template('index.html')
     else:
         data = CustomData(
             text = str(request.form.get('news_text'))
@@ -22,7 +22,7 @@ def predict_news():
 
         pred_pipeline = PredictPipeline()
         results = pred_pipeline.predict(pred)
-        return render_template('home.html',results=results)
+        return render_template('index.html',results=results)
     
 if __name__=="__main__":
     app.run(host="0.0.0.0",debug=True)
