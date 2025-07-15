@@ -1,1 +1,79 @@
-<h1>Welcome to the homepage</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Classification</title>
+    <link rel="stylesheet" href="path/to/bootstrap.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .login {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #343a40;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            margin-top: 20px;
+            text-align: center;
+            color: #495057;
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 10px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        .form-control {
+            width: 100%;
+            height: 120px;
+            resize: vertical;
+            overflow-wrap: break-word;
+            white-space: pre-wrap;
+        }
+
+        .sub-heading {
+            font-size: 1.2rem;
+            color: #495057;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <h1>News Classification</h1>
+        <form action="{{ url_for('predict_news') }}" method="post">
+            <div class="mb-3">
+                <h2 class="sub-heading">Enter the news here</h2>
+                <textarea id="news_text" class="form-control" name="news_text" required></textarea>
+            </div>
+            <div class="mb-3">
+                <input class="btn btn-primary" type="submit" value="Predict">
+            </div>
+        </form>
+        <h2>
+            The news is of <strong>{{ results }}</strong> category.
+        </h2>
+    </div>
+</body>
+
+</html>
