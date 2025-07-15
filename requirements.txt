@@ -10,4 +10,6 @@ dill
 scikit-learn
 git-filter-repo
 flask
+tensorflow
+tensorflow-text
 gunicorn
